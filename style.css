@@ -135,6 +135,10 @@ footer p {
     .gallery a {
         font-size: 1em;
     }
+
+    .gallery-container {
+        font-size: 1em;
+    }
 }
 
 .ensaio-description {
