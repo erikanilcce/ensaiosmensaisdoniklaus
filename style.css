@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'ZCOOL XiaoWei', serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #4f757c;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #30484d;
+    margin-bottom: 20px;
+}
+
+.gallery-container {
+    margin: 20px auto;
+    width: 80%;
+}
+
+.gallery {
+    list-style: none;
+    padding: 0;
+}
+
+.gallery li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.gallery a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #30484d;
+    padding: 10px;
+    background-color: #eaeaea;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.gallery a:hover {
+    background-color: #3b5be7;
+    color: white;
+}
+
+.carousel {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #333;
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-button:hover {
+    background-color: #b6c9e6;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 1em;
+    color: #30484d;
+}
+
+footer p {
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .gallery-container, .carousel {
+        width: 90%;
+    }
+
+    .carousel-button {
+        font-size: 20px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .gallery a {
+        font-size: 1em;
+    }
+}
+
+.ensaio-description {
+    font-size: 1.2em;
+    color: #555;
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #eaeaea;
+    border-radius: 8px;
+    text-align: left;}
+
+    .navigation a {
+        text-decoration: none;
+        color: #30484d;
+        font-size: 1.2em;
+        margin: 0 10px;
+    }
+    
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #f1f1f1;
+        margin-top: 30px;
+    }
+    
+    footer p {
+        font-size: 0.9em;
+        color: #777;
+    }
