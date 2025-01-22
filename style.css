@@ -115,10 +115,10 @@ footer p {
     color: #777;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .gallery-container, .carousel {
-        width: 90%;
+        width: 100%;
+        height: auto;
     }
 
     .carousel-button {
@@ -164,3 +164,4 @@ footer p {
         font-size: 0.9em;
         color: #777;
     }
+
